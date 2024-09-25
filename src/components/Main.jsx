@@ -1,4 +1,6 @@
 import ImageGallary from "./ImageGallary";
+import MobileInteractive from "../assets/mobile/image-interactive.jpg";
+import DesktopInteractive from "../assets/desktop/image-interactive.jpg";
 
 function Main() {
   return (
@@ -6,17 +8,11 @@ function Main() {
       <div className="mx-auto w-full max-w-screen-xl px-8 py-24 sm:px-24">
         <div className="mb-12 sm:mb-20">
           <picture className="w-full lg:relative">
-            <source
-              media="(max-width: 767px)"
-              srcSet="/src/assets/mobile/image-interactive.jpg"
-            />
-            <source
-              media="(max-width: 767px)"
-              srcSet="/src/assets/desktop/image-interactive.jpg"
-            />
+            <source media="(max-width: 767px)" srcSet={MobileInteractive} />
+            <source media="(max-width: 767px)" srcSet={DesktopInteractive} />
             <img
               className="mx-auto lg:w-3/5 lg:mx-0 sm:mb-8"
-              src="/src/assets/desktop/image-interactive.jpg"
+              src={DesktopInteractive}
               alt="image-interactive"
             />
             <div className="text-center px-6 py-4 lg:p-0 lg:pt-16 lg:pl-16 bg-white lg:absolute lg:w-7/12 lg:text-left bottom-0 right-0">

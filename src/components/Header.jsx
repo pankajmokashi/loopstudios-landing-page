@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Logo from "../assets/logo.svg";
+import Menu from "../assets/icon-hamburger.svg";
 
 function Header() {
   const [show, setShow] = useState(false);
@@ -7,7 +9,7 @@ function Header() {
     <header className="relative w-full min-h-[168px] hero-img flex items-center justify-center text-white sm:pt-16">
       <div className="absolute top-0 mx-auto w-full max-w-screen-xl flex items-center justify-between p-8 sm:p-16">
         <div className="cursor-pointer">
-          <img src="/src/assets/logo.svg" alt="logo" />
+          <img src={Logo} alt="logo" />
         </div>
         <nav className="hidden md:block">
           <ul className="flex gap-8">
@@ -37,7 +39,7 @@ function Header() {
           className="block md:hidden cursor-pointer"
           onClick={() => setShow(!show)}
         >
-          <img src="/src/assets/icon-hamburger.svg" alt="icon-hamburger" />
+          <img src={Menu} alt="icon-hamburger" />
         </div>
         {show && (
           <div className="absolute bottom-10 right-8 left-8 h-0 rounded-md">
