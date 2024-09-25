@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/src/assets/desktop/image-hero.jpg);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 640px) {
+  .hero-img {
+    background-image: url(/src/assets/mobile/image-hero.jpg);
+  }
+}
+
+/* ------------------------------------------- */
+
+@media screen and (max-width: 640px) {
+  .heading {
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heading {
+    font-size: 2rem;
+    line-height: 2.1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .heading {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .heading {
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+}
+
+/* ------------------------------------------- */
+
+.gallary-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+}
