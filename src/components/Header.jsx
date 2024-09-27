@@ -1,9 +1,16 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Logo from "../assets/logo.svg";
 import Menu from "../assets/icon-hamburger.svg";
 
 function Header() {
   const [show, setShow] = useState(false);
+
+  React.useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => window.innerWidth >= 640 && setShow(false)
+    );
+  }, []);
 
   return (
     <header className="relative w-full min-h-[168px] hero-img flex items-center justify-center text-white sm:pt-16">
@@ -42,7 +49,7 @@ function Header() {
           <img src={Menu} alt="icon-hamburger" />
         </div>
         {show && (
-          <div className="absolute bottom-10 right-8 left-8 h-0 rounded-md">
+          <div className="absolute bottom-5 sm:bottom-10 right-8 left-8 h-0 rounded-md">
             <ul className="flex gap-0 flex-col bg-white rounded-md p-8">
               <li className="cursor-pointer px-4 py-2 rounded-md text-black hover:bg-slate-200 hover:text-black hover:opacity-60">
                 About
