@@ -19,7 +19,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/pankajmokashi/loopstudios-landing-page](https://github.com/pankajmokashi/loopstudios-landing-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://loopstudios-responsive-page.netlify.app/](https://loopstudios-responsive-page.netlify.app/)
 
 ### Built with
 
@@ -29,7 +29,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [Vite](https://vitejs.dev/) - JS library
-- [tailwindcss](https://tailwindcss.com/) - For styles
+- [TailwindCSS](https://tailwindcss.com/) - For styles
 
 ## Author
 
